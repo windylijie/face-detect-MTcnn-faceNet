@@ -28,7 +28,7 @@ opencv
 （2）face_detector_MTcnn.py 是对detect_face.py进行测试：实现了视频流下人脸的检测和定位功能
 
 
-第二部：利用faceNet 实现两张图片距离向量的计算
+第二步：利用faceNet 实现两张图片距离向量的计算
 
 （1）facenet.py 是我直接在网上下载的 文件 他实现了相关函数的处理具体faceNet的实现原理这里就不讲了 可以自行收索资料了解一下 我当时是看了吴恩达的视屏才知道这个方法， 开始的时候我只使用直方图比较 效果很差 所以这个faceNet方法很好
 
@@ -57,7 +57,7 @@ opencv
       
       
       
-第四部：realtime_detect_face_and_recognition.py
+第四步：realtime_detect_face_and_recognition.py
 
       把相关的文件传放到必要的位置上可以直接执行 实现人脸的属性检测 并分类
       
