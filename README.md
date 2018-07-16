@@ -5,6 +5,17 @@ tensorflow
 pycharm
 opencv
 
+总体功能：
+
+        Mtcnn 实现人脸检测
+        
+        faceNet ： 实现相似度计算
+
+
+
+
+
+
 第一步：实现人脸检测功能（MTcnn）
 最开始的时候使用的是opencv自带的人脸级联分类器进行人脸检测，但是 后来查一下资料说MTcnn能够实现的效果更好 ，所以尝试着用一下。
   
@@ -46,18 +57,28 @@ opencv
       
       
       
-第四部：
+第四部：realtime_detect_face_and_recognition.py
+
+      把相关的文件传放到必要的位置上可以直接执行 实现人脸的属性检测 并分类
+      
+      
+      
+      
+备注：
+由于20170512-110547.pb 这个文件大于25M  没法在线上传 ，需要自己下载  放到 model 文件夹下 
+
+        （1）将所有的文件放到一个工程中  执行collect_frame_to_csv.py 文件   ，这个就会采集人脸数据  会让你输入标签   标签如果已有 就会覆盖掉以前的数据
+        
+        （2）数据采集完后 ，直接执行realtime_detect_face_and_recognition.py  文件  会咨询你是否 采集 数据  如果上一步做了  就 输入n
+        
+          接着会问你 是否进行 detect   输入y   就可以实现人脸检测  和 标注   
+          如果 检测的人脸在不能与csv文件中匹配 就会显示 others
+          
 
 
+  
 
 
-
-
-
-
-
-第一个文件 collect_frame_to_csv.py:
-主要实现的功能：利用MTcnn进行人脸检测，将人脸通过facenet 模型计算其128维向量，存在/data/data.csv文件中去,成为后续对比的数据
 
 
 
